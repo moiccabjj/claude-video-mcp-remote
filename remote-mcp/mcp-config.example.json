@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "claude-video-watch": {
+      "type": "http",
+      "url": "https://video.example.com/mcp",
+      "headers": {
+        "Authorization": "Bearer REPLACE_WITH_SECRET"
+      }
+    }
+  }
+}
+
