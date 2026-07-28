@@ -77,6 +77,7 @@ def watch_video(url: str, question: str = "Summarize this video", detail: str = 
 mcp.settings.host = os.environ.get("HOST", "0.0.0.0")
 mcp.settings.port = int(os.environ.get("PORT", "8000"))
 mcp.settings.streamable_http_path = os.environ.get("MCP_PATH", "/mcp")
+mcp.settings.transport_security.allowed_hosts = ["claude-video-mcp-remote.onrender.com", "localhost", "127.0.0.1"]
 
 
 if __name__ == "__main__":
